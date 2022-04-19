@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Form from '../components/Form';
+import Loading from '../components/Loading';
 import { createUser } from '../services/userAPI';
 
 class Login extends React.Component {
@@ -43,7 +44,7 @@ class Login extends React.Component {
             disabled={ name.length < min }
             onClick={ login }
           />}
-        { buttonEnter && <h1>Carregando...</h1> }
+        { buttonEnter && <Loading />}
       </div>
     );
   }

@@ -37,7 +37,7 @@ class Form extends React.Component {
 Form.propTypes = {
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
-  disabled: PropTypes.func.isRequired,
+  disabled: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 

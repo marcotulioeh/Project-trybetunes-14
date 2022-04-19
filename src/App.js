@@ -27,7 +27,6 @@ class App extends React.Component {
     const { loggingIn } = this;
     return (
       <BrowserRouter>
-        <p>TrybeTunes</p>
         <Switch>
           <Route exact path="/">
             { logged && <Redirect to="/search" /> }
