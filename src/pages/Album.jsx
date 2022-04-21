@@ -40,7 +40,7 @@ class Album extends React.Component {
             {album.collectionName}
           </h2>
           <div />
-          <div className="musicPreview">
+          <div>
             { musics
               .map((disc) => <MusicCard key={ disc.trackId } disc={ disc } />)}
           </div>
