@@ -33,13 +33,13 @@ class Search extends React.Component {
       <section key={ collectionId }>
         <img src={ artworkUrl100 } alt={ collectionName } />
         <div>
-          <h2>{ collectionName }</h2>
+          <h3>{ collectionName }</h3>
           <p>{ artistName }</p>
           <Link
             to={ `/album/${collectionId}` }
             data-testid={ `link-to-album-${collectionId}` }
           >
-            Saiba mais
+            Músicas
           </Link>
         </div>
       </section>
@@ -58,7 +58,7 @@ class Search extends React.Component {
     });
     if (searchApi[0] === undefined) {
       return this.setState({
-        album: <h2>Nenhum álbum foi encontrado</h2>,
+        album: <h1>Nenhum álbum foi encontrado</h1>,
       });
     }
     this.setState({
