@@ -4,7 +4,6 @@ import Loading from './Loading';
 import {
   addSong,
   getFavoriteSongs,
-  // removeSong,
 } from '../services/favoriteSongsAPI';
 
 class MusicCard extends React.Component {
